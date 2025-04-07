@@ -1,7 +1,7 @@
 public class Location {
-    public int row;
-    public int column;
-    public static double maxValue;
+    private int row;
+    private int column;
+    private static double maxValue;
 
     public Location() {
         row = 1;
