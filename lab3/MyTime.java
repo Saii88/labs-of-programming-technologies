@@ -1,7 +1,7 @@
 public class MyTime {
-    private long hour;
-    private long minute;
-    private long second;
+    private int hour;
+    private int minute;
+    private int second;
 
     public MyTime() {
         this(System.currentTimeMillis());
@@ -18,15 +18,15 @@ public class MyTime {
         this.second = second;
     }
 
-    public long getHour() {
+    public int getHour() {
         return hour;
     }
 
-    public long getMinute() {
+    public int getMinute() {
         return minute;
     }
 
-    public long getSecond() {
+    public int getSecond() {
         return second;
     }
 
