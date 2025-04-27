@@ -27,7 +27,7 @@ class Stock {
         System.out.print(symbol + " " + name + " " + previousClosingPrice + " " + currentPrice);
     }
 }
-public class Main {
+public class Task2 {
     public static void main(String[] args) {
 
         Stock sber = new Stock("SBER", "ПАО", 281.50, 282.87);
