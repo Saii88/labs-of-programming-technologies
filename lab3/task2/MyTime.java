@@ -1,3 +1,5 @@
+package task2;
+
 public class MyTime {
     private int hour;
     private int minute;
