@@ -1,3 +1,5 @@
+package task2;
+
 public class MyTimeClient {
     public static void main(String[] args) {
         MyTime time1 = new MyTime();
