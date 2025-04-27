@@ -1,3 +1,5 @@
+package task3;
+
 public class MyIntegerClient {
     public static void main(String[] args) {
         MyInteger myInt1 = new MyInteger(5);
