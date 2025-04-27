@@ -43,7 +43,7 @@ class StopWatch {
     }
 }
 
-public class Main {
+public class Task3 {
     public static void main(String[] args) {
         StopWatch time = new StopWatch();
 
