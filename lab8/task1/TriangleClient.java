@@ -4,33 +4,32 @@ import java.util.Scanner;
 
 public class TriangleClient {
     public static void main(String[] args) {
-        Triangle triangle = createUserTriangle();
-        System.out.println(triangle);
-    }
 
-    private static Triangle createUserTriangle() {
-        double[] sides = promptDoubleValues(3);
-        String color = promptStringValue("Введите цвет: ");
-        boolean isFilled = promptBooleanValue();
+        double[] sides = DoubleValues(3);
         Triangle triangle = new Triangle(sides[0], sides[1], sides[2]);
+        String color = StringValue("Введите цвет: ");
+        boolean isFilled = BooleanValue();
         triangle.setColor(color);
         triangle.setFilled(isFilled);
-        return triangle;
+        System.out.println("площадь: " + triangle.getArea());
+        System.out.println("периметр: " + triangle.getPerimeter());
+        System.out.println("цвет: " + triangle.getColor());
+        System.out.println(triangle.toString());
     }
 
-    private static boolean promptBooleanValue() {
+    private static boolean BooleanValue() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите [T]rue' для заливки или [F]alse для без заливки: ");
         return scanner.nextLine().toUpperCase().charAt(0) == 'T';
     }
 
-    private static String promptStringValue(String prompt) {
+    private static String StringValue(String prompt) {
         Scanner scanner = new Scanner(System.in);
         System.out.print(prompt);
         return scanner.nextLine();
     }
 
-    private static double[] promptDoubleValues(int size) {
+    private static double[] DoubleValues(int size) {
         double[] values = new double[size];
         boolean valid;
         do {
