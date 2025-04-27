@@ -1,4 +1,4 @@
-public class Main {
+public class Task3 {
     public static void main(String[] args) {
         long curyear=10;
         for (int i=0;i<=8; i++) {
