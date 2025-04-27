@@ -1,4 +1,29 @@
 public class MyString2 {
+
+    public static void main(String[] args) {
+        MyString2 str1 = new MyString2("test1");
+        MyString2 str2 = new MyString2("abcdefghijklm");
+        System.out.print("str1.compare(test1): ");
+        System.out.println(str1.compare("test1"));
+        System.out.print("str2.substring(5): ");
+        print(str2.substring(5));
+        System.out.print("str2.toUpperCase(): ");
+        print(str2.toUpperCase());
+        System.out.print("MyString2.valueOf(true): ");
+        print(MyString2.valueOf(true));
+    }
+
+    public static void print(MyString2 str) {
+        print(str.toChars());
+    }
+
+    public static void print(char[] chars) {
+        for (int i = 0; i < chars.length; i++) {
+            System.out.print(chars[i]);
+        }
+        System.out.println();
+    }
+    
     private String s;
 
     public MyString2(String s) {
