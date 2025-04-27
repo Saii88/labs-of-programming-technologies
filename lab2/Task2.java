@@ -1,6 +1,6 @@
 import java.util.GregorianCalendar;
 
-public class Main {
+public class Task2 {
     public static void main(String[] args) {
         GregorianCalendar calendar = new GregorianCalendar();
         System.out.print(calendar.get(GregorianCalendar.YEAR) + " ");
