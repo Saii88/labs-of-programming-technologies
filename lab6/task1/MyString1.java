@@ -34,11 +34,17 @@ public class MyString1 {
     }
 
     public char charAt(int index) {
+        if (index < 0 || index >= chars.length) {
+            throw new IndexOutOfBoundsException("Индекс " + index + " за пределами строки");    }
         return chars[index];
     }
 
     public int length() {
-        return chars.length;
+        int length = 0;
+        for (char c : chars) {
+            length++;
+        }
+        return length;
     }
 
     public MyString1 substring(int begin, int end) {
